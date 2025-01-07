@@ -5,6 +5,8 @@ inoremap " ""<Left>
 inoremap ' ''<Left>
 inoremap {<CR> {<CR>}<Esc>i<CR><Esc>ki<Tab><Tab>
 
+
+
 syntax on
 set exrc
 set clipboard=unnamed
@@ -78,3 +80,17 @@ autocmd filetype cpp nnoremap <C-C> :s/^\(\s*\)/\1\/\/<CR> :s/^\(\s*\)\/\/\/\//\
 
 
 "copiar todo :%y+
+
+
+call plug#begin('~/AppData/Local/nvim/plugged')
+
+   " Use release branch (recommended)
+   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+   " Or build from source code by using npm
+   Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
+
+call plug#end()
+
+
+

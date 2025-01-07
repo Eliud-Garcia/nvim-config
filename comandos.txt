@@ -1,0 +1,23 @@
+#repositorio de NVIM
+https://github.com/neovim/neovim/releases/
+
+#requisitos:
+- Se necesita Git y Nodejs
+
+#nvim-plug
+- buscar instalacion para Windows-nvim
+- https://github.com/junegunn/vim-plug
+
+
+#en la siguiente ruta crear:
+C:\Users\Eliud\AppData\Local
+- carpeta nvim
+- carpeta plugged
+- init.vim
+
+
+#Instalar coc-snippets
+:CocInstall coc-snippets
+
+#Editar snippets
+:CocCommand snippets.editSnippets
