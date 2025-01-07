@@ -74,8 +74,9 @@ inoremap <C-d> <Esc>Ypi
 nnoremap <F5> :call AbrirArchivos()<CR>
 nnoremap <F6> :r C:\Users\Eliud\Desktop\programming\CP\template\template.cpp <CR> 
 
-autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++11 -Wall -Wextra -O2 -DLOCAL % -o %:r && %:r.exe<CR>
-autocmd filetype cpp nnoremap <F10> :!%:r<CR>
+"autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++11 -Wall -Wextra -O2 -DLOCAL % -o %:r && %:r.exe<CR>
+autocmd filetype cpp nnoremap <F9> :w <bar> :vsplit <CR> :term g++ -std=c++11 -Wall -Wextra -O2 -DLOCAL % -o %:r  && %:r<CR>
+autocmd filetype cpp nnoremap <F10> :vsplit <CR> :term %:r<CR>
 autocmd filetype cpp nnoremap <C-C> :s/^\(\s*\)/\1\/\/<CR> :s/^\(\s*\)\/\/\/\//\1<CR> $
 
 
